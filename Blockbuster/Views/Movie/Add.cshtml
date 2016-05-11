@@ -44,10 +44,10 @@
         var AddMovieviewmodel = function() {
             var self = this;
             self.title = ko.observable("");
-            self.possibleGenres = ["Action", "Adventure", "Drama", "Horror"];
+            self.possibleGenres = ["Action", "Adventure", "Drama", "Horror", "Romance"];
             self.genre = ko.observable("");
             self.saveMovie = function() {
-                sendViewModelToController("/Movie/Create",ko.toJSON(self), function() {
+                sendViewModelToController("/Movie/Create", ko.toJSON(self),function() {
                         alert("Movie Entry Created");
                     });
                 console.log(self.title() + " " + self.genre());

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Blockbuster.repository")]
+[assembly: AssemblyTitle("Blockbuster.Repository")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Blockbuster.repository")]
+[assembly: AssemblyProduct("Blockbuster.Repository")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("843879cf-c7c7-4e87-9cbc-567b76d77764")]
+[assembly: Guid("53853dfc-053b-425c-98a4-2f150ed46479")]
 
 // Version information for an assembly consists of the following four values:
 //
