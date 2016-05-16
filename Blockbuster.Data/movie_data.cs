@@ -1,8 +1,8 @@
-using Blockbuster.Domain;
+﻿using Blockbuster.Domain;
 
 namespace Blockbuster.Data
 {
-    public  class movie_data
+    public class movie_data
     {
         public string genre { get; set; }
         public string title { get; set; }
@@ -15,6 +15,16 @@ namespace Blockbuster.Data
                 id = movie.Id,
                 title = movie.Title,
                 genre = movie.Genre
+            };
+        }
+
+        public Movie ToDomain()
+        {
+            return new Movie
+            {
+                Id = id,
+                Title = title,
+                Genre = genre
             };
         }
     }

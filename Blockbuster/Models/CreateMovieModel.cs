@@ -1,4 +1,4 @@
-﻿using Blockbuster.Domain;
+using Blockbuster.Domain;
 
 namespace Blockbuster.Models
 {
@@ -12,8 +12,8 @@ namespace Blockbuster.Models
             return new Movie
             {
                 Title = Title,
-                Genre = Genre 
-            } ;
+                Genre = Genre
+            };
         }
     }
 }

@@ -1,0 +1,41 @@
+﻿<h1>List of all the Movies in database</h1>
+
+<div class="well well-lg container-fluid" id="listDiv">
+    <div class="row">
+        <table class="table table-condensed ">
+            <thead>
+            <tr>
+                <td>
+                    <h4>
+                        <strong>Title </strong>
+                    </h4>
+                </td>
+                <td>
+                    <h4>
+                        <strong>Genres </strong>
+                    </h4>
+                </td>
+                <hr/>
+
+            </tr>
+            </thead>
+            <tbody data-bind="foreach : Movies">
+            <tr>
+                <td data-bind="text: Title"></td>
+                <td data-bind="text: Genre"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts
+{
+    <script>
+        var model = @Html.Raw(Json.Encode(Model));
+        var ListViewModel = function() {
+            var self = this;
+            self.Movies = ko.observableArray(model.Movies);
+        };
+        ko.applyBindings(new ListViewModel(), document.getElementById("listDiv"));
+    </script>
+}
