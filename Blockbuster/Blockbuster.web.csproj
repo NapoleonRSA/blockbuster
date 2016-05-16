@@ -164,6 +164,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\3.movie-logos.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -205,6 +206,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Movie\Add.cshtml" />
     <Content Include="Views\Movie\List.cshtml" />
+    <Content Include="Views\Movie\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

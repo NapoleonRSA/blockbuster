@@ -13,6 +13,11 @@ namespace Blockbuster.Controllers
             return View();
         }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
         public JsonResult Create(CreateMovieModel model)
         {
             var movie = model.ToDomain();
